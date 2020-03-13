@@ -12,6 +12,92 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
     <link rel="icon" href="images/123.png" type="image/icon type">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <style type="text/css">
+      .container1 {
+  position: absolute;
+  height: 300px;
+  width: 600px;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.card1 {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card1:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card1:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card1:hover ~ .card1 {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title1 {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar1 {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar1 {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar1 {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card1:hover .filledbar1 {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.card1:hover .stroke1 {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+#coding{
+  height: 500px;
+}
+    </style>
   </head>
   <body id="top">
     <header>
@@ -26,6 +112,8 @@
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
+                                <li class="nav-item"><a class="nav-link smooth-scroll" href="#coding">Coding Profiles</a></li>
+
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
               </ul>
@@ -48,9 +136,18 @@
           </p><a class="btn btn-primary smooth-scroll mr-2" href="https://www.linkedin.com/in/saidurgakameshkota" target="_blank" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Connect with Me</a><a class="btn btn-primary" href="" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">View my Resume</a>
         </div>
       </div>
+
       <div class="section">
         <div class="container">
-          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon icon-link" href="https://www.linkedin.com/in/saidurgakameshkota/" rel="tooltip" title="Connect with me on LinkedIn"><i class="fa fa-linkedin"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/ksdkamesh99" rel="tooltip" title="View my Projects on Github"><i class="fa fa-github"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://medium.com/@saidurgakameshkota" rel="tooltip" title="View my articles on Medium"><i class="fa fa-medium"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.quora.com/profile/Sai-Durga-Kamesh-Kota" rel="tooltip" title="View my answers on Quora"><i class="fa fa-quora"></i></a></div>
+          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon icon-link" href="https://www.linkedin.com/in/saidurgakameshkota/" rel="tooltip" title="Connect with me on LinkedIn"><i class="fa fa-linkedin"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/ksdkamesh99" rel="tooltip" title="View my Projects on Github"><i class="fa fa-git"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://medium.com/@saidurgakameshkota" rel="tooltip" title="View my articles on Medium"><i class="fa fa-medium"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.quora.com/profile/Sai-Durga-Kamesh-Kota" rel="tooltip" title="View my answers on Quora"><i class="fa fa-quora"></i></a>
+                       <a class="btn btn-default btn-round btn-lg btn-icon" href="https://medium.com/@saidurgakameshkota" rel="tooltip" title="View my articles on Medium"><i class="fa fa-stack-overflow"></i></a>
+                                   <a class="btn btn-default btn-round btn-lg btn-icon" href="https://medium.com/@saidurgakameshkota" rel="tooltip" title="View my articles on Medium"><iconify-icon data-icon="fa-brands:hackerrank"></iconify-icon></a>
+
+
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://medium.com/@saidurgakameshkota" rel="tooltip" title="View my articles on Medium"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-default btn-round btn-lg btn-icon" href="https://medium.com/@saidurgakameshkota" rel="tooltip" title="View my articles on Medium"><i class="fa fa-twitter"></i></a>
+
+          </div>
         </div>
       </div>
     </div>
@@ -63,9 +160,9 @@
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
             <div class="h4 mt-0 title">About</div>
-            <p>Hello! I am Sai Durga Kamesh Kota, a Computer Science Connoisseur and Sophomore Year Student at Technology.</p>
+            <p>Hello! I am Sai Durga Kamesh Kota, a Computer Science Connoisseur and Sophomore Year Student at National Institute of Technology Patna.</p>
             <p>
-              I'm an Undergraduate Sophomore Year Student currently undertaking a Bachelor's course in Computer Science and Engineering at National Institute of Technology. My skills are primarily in Programming through C, C++,Java,Python,Php,Web Development,Android Development,Machine Learning.My primary strengths are Self-Motivation and a deep desire to learn something new. 
+              I'm an Undergraduate Sophomore Year Student currently undertaking a Bachelor's course in Computer Science and Engineering at National Institute of Technology Patna. My skills are primarily in Programming through C, C++,Java,Python,Php,Web Development,Android Development,Machine Learning.My primary strengths are Self-Motivation and a deep desire to learn something new. 
 
 
 
@@ -78,11 +175,11 @@
             <div class="h4 mt-0 title">Basic Information</div>
             <div class="row">
               <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-              <div class="col-sm-8">19</div>
+              <div class="col-sm-8">18 years old</div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-              <div class="col-sm-8">ksdkamesh99@gmail.com(Personal)<br>kotasai.cs18@nitp.ac.in(Official)<br>kotak.ug18@nitp.ac.in(Official)</div>
+              <div class="col-sm-8">ksdkamesh99@gmail.com(Personal)<br>kotasai.cs18@nitp.ac.in(Official)<br>kotak.ug18.cs@nitp.ac.in(Official)</div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
@@ -315,7 +412,7 @@
         <div class="ml-auto mr-auto">
           <div class="row">
             <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://www.coursera.org/account/accomplishments/specialization/5V36A3EFH6JR">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://drive.google.com/file/d/11K8RDqmK8aJ-pjxHcNZpKJ69eETUq_B4/view?usp=sharing">
                   <figure class="cc-effect"><img src="images/photography-1.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Google ML Explore Intermediate Track</div>
@@ -331,7 +428,47 @@
 </div>
   </div>
 </div>
+    <div class="h4 text-center mb-4 title">Coding Profiles</div>
 
+<div class="section" id="coding">
+  
+  <div class="containerc">
+    <div class="container1">
+  <div class="card1">
+    <h3 class="title1">Card 1</h3>
+    <div class="bar1">
+      <div class="emptybar1"></div>
+      <div class="filledbar1"></div>
+    </div>
+   
+  </div>
+  <div class="card1">
+    <h3 class="title1">Card 2</h3>
+    <div class="bar1">
+      <div class="emptybar1"></div>
+      <div class="filledbar1"></div>
+    </div>
+     </div>
+  <div class="card1">
+    <h3 class="title1">Card 1</h3>
+    <div class="bar1">
+      <div class="emptybar1"></div>
+      <div class="filledbar1"></div>
+    </div>
+   
+  </div>
+  <div class="card1">
+    <h3 class="title1">Card 1</h3>
+    <div class="bar1">
+      <div class="emptybar1"></div>
+      <div class="filledbar1"></div>
+    </div>
+   
+  </div>
+</div>
+    
+    </div>
+    </div>
 <div class="section" id="experience">
   <div class="container cc-experience">
     <div class="h4 text-center mb-4 title">Experience</div>
@@ -399,7 +536,7 @@
                     <p class="mb-0"><strong>Address :</strong></p>Dr No: 23-18-20A
                     <p class="pb-2">2nd Floor,Kota Bhawan,Vyakaranam Vari Street,Satyanarayana Puram,Vijayawada-11,Andhra Pradesh,India</p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1912.5369739046382!2d80.6300586580015!3d16.522363997150627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35eff842360a2b%3A0x6a0ff0c6d71ffa76!2s23-13-1%2F1%2C%20Yakaranam%20Vari%20St%2C%20Satyaranayana%20Puram%2C%20Vijayawada%2C%20Andhra%20Pradesh%20520011!5e0!3m2!1sen!2sin!4v1583948662184!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    <p class="mb-0"><strong>Phone Number :</strong><br>+91 9381225838 <a href="tel:+919381225838" style="">click to call</a></p><p class="mb-0"><strong>Email:<br></strong>ksdkamesh99@gmail.com (Personal)<br><a href="mailto:ksdkamesh99@gmail.com">click to mail</a><br>kotasai.cs18@nitp.ac.in (Official)<br><a href="mailto:kotasai.cs18@nitp.ac.in">click to mail</a><br>kotak.ug18@nitp.ac.in (Official)<br><a href="mailto:kotak.ug18@nitp.ac.in">click to mail</a></p>
+                    <p class="mb-0"><strong>Phone Number :</strong><br>+91 9381225838 <a href="tel:+919381225838" style="">click to call</a></p><p class="mb-0"><strong>Email:<br></strong>ksdkamesh99@gmail.com (Personal)<br><a href="mailto:ksdkamesh99@gmail.com">click to mail</a><br>kotasai.cs18@nitp.ac.in (Official)<br><a href="mailto:kotasai.cs18@nitp.ac.in">click to mail</a><br>kotak.ug18.cs@nitp.ac.in (Official)<br><a href="mailto:kotak.ug18.cs@nitp.ac.in">click to mail</a></p>
                     
 
                     
@@ -420,6 +557,7 @@
     <footer class="footer">
       <div class="container text-center">Wow, You Made It To The End ! </div>
     </footer>
+
     <script src="js/core/jquery.3.2.1.min.js"></script>
     <script src="js/core/popper.min.js"></script>
     <script src="js/core/bootstrap.min.js"></script>

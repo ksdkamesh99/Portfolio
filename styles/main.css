@@ -7222,6 +7222,8 @@ Created using IcoMoon - icomoon.io
 .cc-facebook:hover i {
   color: #3b5998;
 }
+.iconify { width: 40px; height: 50px; }
+
 
 .cc-twitter:hover i {
   color: #1da1f2;
@@ -7247,3 +7249,5 @@ a.credit {
 .section {
   padding-bottom: 0;
 }
+
+
